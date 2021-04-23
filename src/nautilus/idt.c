@@ -30,6 +30,9 @@
 #include <nautilus/thread.h>
 #include <nautilus/irq.h>
 #include <nautilus/backtrace.h>
+
+#include <nautilus/shell.h> 
+
 #ifdef NAUT_CONFIG_WATCHDOG
 #include <nautilus/watchdog.h>
 #endif
@@ -89,7 +92,8 @@ struct idt_desc idt_descriptor =
 };
 
 
-
+addr_t ret_addr; 
+int got_ud; 
 
 int 
 null_excp_handler (excp_entry_t * excp,
@@ -105,6 +109,12 @@ null_excp_handler (excp_entry_t * excp,
     unsigned tid = cpu_info_ready ? get_cur_thread()->tid : 0xffffffff;
     
     printk("\n+++ UNHANDLED EXCEPTION +++\n");
+    if(ret_addr) {
+	printk("ret_addr: %p rip: %p\n", ret_addr, excp->rip); 
+        excp->rip = ret_addr;
+        got_ud = 1;  
+        return 0; 
+    }
     
     if (vector < 32) {
         printk("[%s] (0x%x) error=0x%x <%s>\n    RIP=%p      (core=%u, thread=%u)\n", 
@@ -495,4 +505,39 @@ setup_idt (void)
 
     return 0;
 }
+
+
+void ud_test()
+{
+    uint8_t buf[32];
+    ERROR_PRINT("Target is at: %p\n", buf); 
+    int i;  
+    for(i = 0; i < 32; i++) {
+	buf[i] = 0x90; 
+    }
+    buf[16] = 0xc3; 
+    buf[0] = 0x0f; 
+    buf[1] = 0x0a; 
+    nk_vc_printf("Testing %x %x\n", buf[0], buf[1]); 
+    ret_addr = buf+2;
+    got_ud = 0;  
+    ((void (*)(void)) buf)(); 
+    nk_vc_printf("Success! Got_ud: %d\n", got_ud); 
+}
+
+
+static int
+handle_ud (char * buf, void * priv)
+{
+    ud_test();
+    return 0;
+}
+
+
+static struct shell_cmd_impl test_impl = {
+    .cmd      = "ud",
+    .help_str = "ud",
+    .handler  = handle_ud,
+};
+nk_register_shell_cmd(test_impl);
 
