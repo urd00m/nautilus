@@ -92,6 +92,7 @@ struct idt_desc idt_descriptor =
 };
 
 
+//Global variables of opcode testing 
 addr_t ret_addr; 
 int got_ud; 
 
@@ -109,12 +110,17 @@ null_excp_handler (excp_entry_t * excp,
     unsigned tid = cpu_info_ready ? get_cur_thread()->tid : 0xffffffff;
     
     printk("\n+++ UNHANDLED EXCEPTION +++\n");
-    if(ret_addr) {
-	printk("ret_addr: %p rip: %p\n", ret_addr, excp->rip); 
-        excp->rip = ret_addr;
+
+    /* TODO: Add in handlers for each important exception like UD, general protection fault, page fault, machine check etc.   */
+
+    //Added in for UD errors 
+    if(ret_addr) { //Catches all errors and jumps to the nop part of the function in buf 
+	printk("ret_addr: %p rip: %p\n", ret_addr, excp->rip);  //shows us the faulting instruction 
+        excp->rip = ret_addr; //sets returning address to our ret_addr 
         got_ud = 1;  
-        return 0; 
+        return 0;  //Go to the faulting instruction 
     }
+    //end add 
     
     if (vector < 32) {
         printk("[%s] (0x%x) error=0x%x <%s>\n    RIP=%p      (core=%u, thread=%u)\n", 
@@ -507,20 +513,29 @@ setup_idt (void)
 }
 
 
-void ud_test()
+/* 
+	Puts a bunch of bytes in a buffer (16 bytes: 15 byte maximum instruction plus a ret) and then calls those bytes are a void(void) function 
+	The buffer is then filled with nop instructions (0x90) and ends with a ret (0xc3) instruction 
+	Then the instruction we are testing is added to the buffer. 
+
+	The instruction should cause some sort of exception or run fine, if a UD is thrown we know that is not a valid instruction
+*/
+void ud_test() 
 {
-    uint8_t buf[32];
-    ERROR_PRINT("Target is at: %p\n", buf); 
-    int i;  
-    for(i = 0; i < 32; i++) {
-	buf[i] = 0x90; 
-    }
-    buf[16] = 0xc3; 
-    buf[0] = 0x0f; 
-    buf[1] = 0x0a; 
-    nk_vc_printf("Testing %x %x\n", buf[0], buf[1]); 
+    uint8_t buf[16];
     ret_addr = buf+2;
     got_ud = 0;  
+    ERROR_PRINT("Target is at: %p\n Return Address: %p\n", buf, ret_addr); 
+
+    int i;  
+    for(i = 0; i < 16; i++) {
+	buf[i] = 0x90; 
+    }
+    buf[15] = 0xc3; 
+    buf[0] = 0x0f; 
+    buf[1] = 0x0a; 
+
+    nk_vc_printf("Testing %x %x\n", buf[0], buf[1]); 
     ((void (*)(void)) buf)(); 
     nk_vc_printf("Success! Got_ud: %d\n", got_ud); 
 }
@@ -533,10 +548,10 @@ handle_ud (char * buf, void * priv)
     return 0;
 }
 
-
+//creates a shell command called UD which runs our ud_test() 
 static struct shell_cmd_impl test_impl = {
     .cmd      = "ud",
-    .help_str = "ud",
+    .help_str = "Runs the ud_test() function which calls a function containing opcodes to test",
     .handler  = handle_ud,
 };
 nk_register_shell_cmd(test_impl);
