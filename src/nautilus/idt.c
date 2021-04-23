@@ -551,7 +551,7 @@ handle_ud (char * buf, void * priv)
 //creates a shell command called UD which runs our ud_test() 
 static struct shell_cmd_impl test_impl = {
     .cmd      = "ud",
-    .help_str = "Runs the ud_test() function which calls a function containing opcodes to test",
+    .help_str = "ud",
     .handler  = handle_ud,
 };
 nk_register_shell_cmd(test_impl);
