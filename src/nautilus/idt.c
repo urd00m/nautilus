@@ -522,21 +522,31 @@ setup_idt (void)
 */
 void ud_test() 
 {
+    printk("Running 2\n"); 
     uint8_t buf[16];
+    printk("Memory good\n"); 
     ret_addr = buf+2;
     got_ud = 0;  
+    printk("Global variables good\n"); 
+
     ERROR_PRINT("Target is at: %p\n Return Address: %p\n", buf, ret_addr); 
+    printk("error print good\n"); 
 
     int i;  
     for(i = 0; i < 16; i++) {
 	buf[i] = 0x90; 
     }
+    printk("Can change memory good\n"); 
+
     buf[15] = 0xc3; 
     buf[0] = 0x0f; 
     buf[1] = 0x0a; 
+    printk("can change memory good 2\n"); 
 
     nk_vc_printf("Testing %x %x\n", buf[0], buf[1]); 
+    printk("nk print good good\n"); 
     ((void (*)(void)) buf)(); 
+    printk("Success! Function ran properly\n");
     nk_vc_printf("Success! Got_ud: %d\n", got_ud); 
 }
 
@@ -544,6 +554,7 @@ void ud_test()
 static int
 handle_ud (char * buf, void * priv)
 {
+    printk("Running UD\n"); //test
     ud_test();
     return 0;
 }
