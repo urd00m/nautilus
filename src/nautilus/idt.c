@@ -416,7 +416,7 @@ int idt_find_and_reserve_range(ulong_t numentries, int aligned, ulong_t *first)
 
   for (i=32;i<(NUM_IDT_ENTRIES-numentries+1);) {
 
-    if (idt_handler_table[i]==(ulong_t)null_irq_handler) { 
+    if (idt_handler_table[i]==(ulong_t)null_irq_handler) {  
       for (j=0; 
 	   (i+j)<NUM_IDT_ENTRIES && 
 	     j<numentries &&
@@ -462,7 +462,7 @@ setup_idt (void)
     memset(&idt64, 0, sizeof(struct gate_desc64) * NUM_IDT_ENTRIES);
 
     for (i = 0; i < NUM_EXCEPTIONS; i++) {
-        set_intr_gate(idt64, i, (void*)(excp_start + i*16));
+        set_intr_gate(idt64, i, (void*)(excp_start + i*16)); /*TODO: handle the entries for seperate occasions */
         idt_assign_entry(i, (ulong_t)null_excp_handler, 0);
     }
 
