@@ -550,14 +550,34 @@ void ud_test()
     nk_vc_printf("Success! Got_ud: %d\n", got_ud); 
 }
 
+/* 
+    Our MSR test function, runs through about the 4 billion possible msrs and attempts to find undocumented ones 
+*/
+void 
+msr_test() 
+{
+    nk_vc_printf("Running msr test\n");
+}
+
+
 
 static int
 handle_ud (char * buf, void * priv)
 {
-    printk("Running UD\n"); //test
+//    printk("Running UD\n"); //test
     ud_test();
     return 0;
 }
+
+static int 
+handle_msr (char *  buf, void * priv) 
+{
+//    printk("Running msr test\n"); //test 
+    msr_test(); 
+    return 0; 
+}
+
+
 
 //creates a shell command called UD which runs our ud_test() 
 static struct shell_cmd_impl test_impl = {
@@ -567,3 +587,10 @@ static struct shell_cmd_impl test_impl = {
 };
 nk_register_shell_cmd(test_impl);
 
+//creates a shell command called UD which runs our msr_test()
+static struct shell_cmd_impl msr_test_impl = {
+    .cmd      = "msrtest",
+    .help_str = "msrtest",
+    .handler  = handle_msr,
+};
+nk_register_shell_cmd(msr_test_impl);
