@@ -550,6 +550,30 @@ void ud_test()
     nk_vc_printf("Success! Got_ud: %d\n", got_ud); 
 }
 
+
+
+
+
+
+
+
+/*
+const uint32_t CPUID_FLAG_MSR = 1 << 5;
+
+static
+int cpuHasMSR()
+{
+   uint32_t a, d; // eax, edx
+   cpuid(1, &a, &d);
+   return d & CPUID_FLAG_MSR;
+}
+*/
+
+
+
+
+
+
 /* 
     Our MSR test function, runs through about the 4 billion possible msrs and attempts to find undocumented ones 
 */
@@ -558,6 +582,20 @@ msr_test()
 {
     nk_vc_printf("Running msr test\n");
 }
+
+/*
+    Checks if the processor has MSRs 
+*/
+
+void 
+msr_check() 
+{
+    int ret; 
+    nk_vc_printf("Running check msr\n");
+    //ret = cpuHasMSR();  TODO
+    nk_vc_printf("CPU MSR: %d\n", ret); 
+}
+
 
 
 
@@ -577,6 +615,13 @@ handle_msr (char *  buf, void * priv)
     return 0; 
 }
 
+static int 
+check_msr (char * buf, void * priv) 
+{
+   msr_check(); 
+   return 0; 
+}
+
 
 
 //creates a shell command called UD which runs our ud_test() 
@@ -594,3 +639,11 @@ static struct shell_cmd_impl msr_test_impl = {
     .handler  = handle_msr,
 };
 nk_register_shell_cmd(msr_test_impl);
+
+//creates a shell command called UD which checks if the processor has MSRs 
+static struct shell_cmd_impl msr_check_impl = {
+    .cmd      = "checkmsr",
+    .help_str = "checkmsr",
+    .handler  = check_msr,
+};
+nk_register_shell_cmd(msr_check_impl);
