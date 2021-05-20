@@ -135,6 +135,10 @@ int null_irq_handler(excp_entry_t * excp, excp_vec_t vector, void * state_addr);
 //Allow for changing the return address
 void change_ret_addr(addr_t new_addr); 
 
+//Allow for catching gp and jumping to the correct address
+void set_fault();  //turns on fault catches
+void reset_fault(); //turns off fault catches
+
 
 static inline void
 write_gate_desc (struct   gate_desc64 * idt,

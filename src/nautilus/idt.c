@@ -95,6 +95,7 @@ struct idt_desc idt_descriptor =
 //Global variables of opcode testing 
 addr_t ret_addr_opcode; 
 int got_ud; 
+int gp_catch;
 
 int 
 null_excp_handler (excp_entry_t * excp,
@@ -115,6 +116,8 @@ null_excp_handler (excp_entry_t * excp,
 
     /* TODO: Add in handlers for each important exception like UD, general protection fault, page fault, machine check etc.   */
 
+    /* TODO: cleanup */
+
     //Added in for UD errors 
     if(ret_addr_opcode) { //Catches all errors and jumps to the nop part of the function in buf 
 	printk("ret_addr: %p rip: %p\n", ret_addr_opcode, excp->rip);  //shows us the faulting instruction 
@@ -122,6 +125,15 @@ null_excp_handler (excp_entry_t * excp,
         excp->rip = ret_addr_opcode; //sets returning address to our ret_addr
         got_ud = 1;  
         return 0;  //Go to the faulting instruction 
+    }
+
+
+    //Added in for rdmsr general protection faults
+    if(gp_catch) {
+        printk("rip: %p\n", excp->rip);  //shows us the faulting instruction 
+        nk_vc_printf("Vector: %d Error code: %d\n", vector, excp->error_code); //show the error code 
+        excp->rip = excp->rip+2; //Jumps over the rdmsr instruction
+        return 0;  //Go past rdmsr 
     }
     //END OUR ADD TODO
 
@@ -569,4 +581,17 @@ nk_register_shell_cmd(test_impl);
 void
 change_ret_addr(addr_t new_addr) {
     ret_addr_opcode = new_addr;
+}
+
+
+//turn on catcher 
+void 
+set_fault() {
+    gp_catch = 1; 
+}
+
+//turn off catcher 
+void
+reset_fault() {
+   gp_catch = 0;
 }

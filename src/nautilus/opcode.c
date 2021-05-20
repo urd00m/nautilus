@@ -13,49 +13,36 @@
 */
 
 /*
-   Return function for general protection fault 
-*/
-static void
-gp_handler() {
-    nk_vc_printf("Got a general protection fault\n");
-    change_ret_addr(0); 
-    return 0; 
-}
-
-
-
-
-
-
-
-
-
-//TODO: The redirection from the exception handler isn't properly working
-
-
-/*
     TODO: Test function for reading from MSRs 
 */
 void
 read_msr_at(uint32_t location) {
     uint32_t lo, hi;
     uint64_t ret; 
+
+    set_fault(); //turn on our catcher
     asm volatile("rdmsr" : "=a"(lo), "=d"(hi) : "c"(location)); //rdmsr 
+    reset_fault(); //turn off our catcher 
+
     ret = ((uint64_t)hi << 32) | lo;
-    nk_vc_printf("MSR Register value: 0x%08x\n", ret);
+    nk_vc_printf("Hi order (edx): 0x%08x Lo order (eax): 0x%08x\n", hi, lo);
+    nk_vc_printf("MSR Register value: 0x%llx\n", ret);
 }
 
 static int
 handle_test_msr(char * buf, void * priv) {
     uint32_t location; 
-    change_ret_addr(gp_handler); //set it to our handler 
 
-    //Should print the APIC BASE value 
+    //Should print the APIC BASE value (uses 32 bits)
     location = 0x1B; 
     read_msr_at(location);
 
     //Should fault, tries to read msr from 0x02 which doesn't exist 
     location = 0x02; 
+    read_msr_at(location); 
+
+    //Should fault, tries to read msr from 0x02 which doesn't exist 
+    location = 0x03; 
     read_msr_at(location); 
 
     return 0;
@@ -86,10 +73,6 @@ handle_read_cpuid(char * buf, void * priv) {
 }
 
 
-
-
-
-
 /*
     register commands to shell
 */
@@ -106,4 +89,3 @@ static struct shell_cmd_impl msr_test_impl = {
     .handler  = handle_test_msr,
 };
 nk_register_shell_cmd(msr_test_impl);
-
