@@ -93,7 +93,7 @@ struct idt_desc idt_descriptor =
 
 
 //Global variables of opcode testing 
-addr_t ret_addr; 
+addr_t ret_addr_opcode; 
 int got_ud; 
 
 int 
@@ -108,19 +108,25 @@ null_excp_handler (excp_entry_t * excp,
     cpu_id_t cpu_id = cpu_info_ready ? my_cpu_id() : 0xffffffff;
     /* TODO: this should be based on scheduler initialization, not CPU */
     unsigned tid = cpu_info_ready ? get_cur_thread()->tid : 0xffffffff;
-    
+
+
+    //OUR ADD TODO
     printk("\n+++ UNHANDLED EXCEPTION +++\n");
 
     /* TODO: Add in handlers for each important exception like UD, general protection fault, page fault, machine check etc.   */
 
     //Added in for UD errors 
-    if(ret_addr) { //Catches all errors and jumps to the nop part of the function in buf 
-	printk("ret_addr: %p rip: %p\n", ret_addr, excp->rip);  //shows us the faulting instruction 
-        excp->rip = ret_addr; //sets returning address to our ret_addr 
+    if(ret_addr_opcode) { //Catches all errors and jumps to the nop part of the function in buf 
+	printk("ret_addr: %p rip: %p\n", ret_addr_opcode, excp->rip);  //shows us the faulting instruction 
+        nk_vc_printf("Vector: %d Error code: %d\n", vector, excp->error_code); //show the error code 
+        excp->rip = ret_addr_opcode; //sets returning address to our ret_addr
         got_ud = 1;  
         return 0;  //Go to the faulting instruction 
     }
-    //end add 
+    //END OUR ADD TODO
+
+
+
     
     if (vector < 32) {
         printk("[%s] (0x%x) error=0x%x <%s>\n    RIP=%p      (core=%u, thread=%u)\n", 
@@ -522,81 +528,25 @@ setup_idt (void)
 */
 void ud_test() 
 {
-    printk("Running 2\n"); 
     uint8_t buf[16];
-    printk("Memory good\n"); 
-    ret_addr = buf+2;
+    ret_addr_opcode = buf+2;
     got_ud = 0;  
-    printk("Global variables good\n"); 
 
-    ERROR_PRINT("Target is at: %p\n Return Address: %p\n", buf, ret_addr); 
-    printk("error print good\n"); 
+    ERROR_PRINT("Target is at: %p\n Return Address: %p\n", buf, ret_addr_opcode); 
 
     int i;  
     for(i = 0; i < 16; i++) {
 	buf[i] = 0x90; 
     }
-    printk("Can change memory good\n"); 
 
     buf[15] = 0xc3; 
     buf[0] = 0x0f; 
     buf[1] = 0x0a; 
-    printk("can change memory good 2\n"); 
 
     nk_vc_printf("Testing %x %x\n", buf[0], buf[1]); 
-    printk("nk print good good\n"); 
     ((void (*)(void)) buf)(); 
-    printk("Success! Function ran properly\n");
     nk_vc_printf("Success! Got_ud: %d\n", got_ud); 
 }
-
-
-
-
-
-
-
-
-/*
-const uint32_t CPUID_FLAG_MSR = 1 << 5;
-
-static
-int cpuHasMSR()
-{
-   uint32_t a, d; // eax, edx
-   cpuid(1, &a, &d);
-   return d & CPUID_FLAG_MSR;
-}
-*/
-
-
-
-
-
-
-/* 
-    Our MSR test function, runs through about the 4 billion possible msrs and attempts to find undocumented ones 
-*/
-void 
-msr_test() 
-{
-    nk_vc_printf("Running msr test\n");
-}
-
-/*
-    Checks if the processor has MSRs 
-*/
-
-void 
-msr_check() 
-{
-    int ret; 
-    nk_vc_printf("Running check msr\n");
-    //ret = cpuHasMSR();  TODO
-    nk_vc_printf("CPU MSR: %d\n", ret); 
-}
-
-
 
 
 static int
@@ -607,23 +557,6 @@ handle_ud (char * buf, void * priv)
     return 0;
 }
 
-static int 
-handle_msr (char *  buf, void * priv) 
-{
-//    printk("Running msr test\n"); //test 
-    msr_test(); 
-    return 0; 
-}
-
-static int 
-check_msr (char * buf, void * priv) 
-{
-   msr_check(); 
-   return 0; 
-}
-
-
-
 //creates a shell command called UD which runs our ud_test() 
 static struct shell_cmd_impl test_impl = {
     .cmd      = "ud",
@@ -632,18 +565,8 @@ static struct shell_cmd_impl test_impl = {
 };
 nk_register_shell_cmd(test_impl);
 
-//creates a shell command called UD which runs our msr_test()
-static struct shell_cmd_impl msr_test_impl = {
-    .cmd      = "msrtest",
-    .help_str = "msrtest",
-    .handler  = handle_msr,
-};
-nk_register_shell_cmd(msr_test_impl);
-
-//creates a shell command called UD which checks if the processor has MSRs 
-static struct shell_cmd_impl msr_check_impl = {
-    .cmd      = "checkmsr",
-    .help_str = "checkmsr",
-    .handler  = check_msr,
-};
-nk_register_shell_cmd(msr_check_impl);
+//allow others to change ret_addr
+void
+change_ret_addr(addr_t new_addr) {
+    ret_addr_opcode = new_addr;
+}
