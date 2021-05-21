@@ -32,6 +32,7 @@
 #include <nautilus/backtrace.h>
 
 #include <nautilus/shell.h> 
+#include <nautilus/opcode.h> //added for MSR 
 
 #ifdef NAUT_CONFIG_WATCHDOG
 #include <nautilus/watchdog.h>
@@ -112,8 +113,6 @@ null_excp_handler (excp_entry_t * excp,
 
 
     //OUR ADD TODO
-    printk("\n+++ UNHANDLED EXCEPTION +++\n");
-
     /* TODO: Add in handlers for each important exception like UD, general protection fault, page fault, machine check etc.   */
 
     /* TODO: cleanup */
@@ -130,16 +129,19 @@ null_excp_handler (excp_entry_t * excp,
 
     //Added in for rdmsr general protection faults
     if(gp_catch) {
-        printk("rip: %p\n", excp->rip);  //shows us the faulting instruction 
-        nk_vc_printf("Vector: %d Error code: %d\n", vector, excp->error_code); //show the error code 
+#ifdef DEBUG
+        printk("\n+++ UNHANDLED EXCEPTION +++\n");
+        printk("IGNORE---- rip: %p\n", excp->rip);  //shows us the faulting instruction 
+        nk_vc_printf("IGNORE---- Vector: %d Error code: %d\n", vector, excp->error_code); //show the error code 
+#endif
         excp->rip = excp->rip+2; //Jumps over the rdmsr instruction
+        invalid_msr(); //invalidate the address for that MSR
         return 0;  //Go past rdmsr 
     }
     //END OUR ADD TODO
 
 
-
-    
+    printk("\n+++ UNHANDLED EXCEPTION +++\n");
     if (vector < 32) {
         printk("[%s] (0x%x) error=0x%x <%s>\n    RIP=%p      (core=%u, thread=%u)\n", 
 	       excp_codes[vector][EXCP_NAME],
@@ -583,7 +585,6 @@ change_ret_addr(addr_t new_addr) {
     ret_addr_opcode = new_addr;
 }
 
-
 //turn on catcher 
 void 
 set_fault() {
@@ -595,3 +596,4 @@ void
 reset_fault() {
    gp_catch = 0;
 }
+

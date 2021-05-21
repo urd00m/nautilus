@@ -3,17 +3,29 @@
 #include <nautilus/naut_string.h>
 #include <nautilus/shell.h>
 #include <nautilus/msr.h>
-#include <nautilus/idt.h> //in order to specify return address here 
+#include <nautilus/idt.h>
+#include <nautilus/opcode.h>
 
-
-#define CPUID_FEAT_EDX_MSR 1<<5
-#define RESERVED 1<<20
 /*
 	Opcode branch functions to play with CPUID and MSR
 */
+int faulted_opcode;
 
 /*
-    TODO: Test function for reading from MSRs 
+    Scans all 4 billion possible MSRs and prints out valid MSRs to the screen for IO redirection to file
+*/
+static int
+handle_scan_msr(char * buf, void * priv) {
+    uint32_t location;
+    for(location = 0; location < 0xffffffff; location++) { //scanning the 4 billion possible MSRs, our general protection fault catcher will print it to the screen, where we redirect it to a file 
+        read_msr_at(location); 
+    }
+    return 0;
+}
+
+
+/*
+    Test function for MSR 
 */
 void
 read_msr_at(uint32_t location) {
@@ -25,8 +37,20 @@ read_msr_at(uint32_t location) {
     reset_fault(); //turn off our catcher 
 
     ret = ((uint64_t)hi << 32) | lo;
-    nk_vc_printf("Hi order (edx): 0x%08x Lo order (eax): 0x%08x\n", hi, lo);
-    nk_vc_printf("MSR Register value: 0x%llx\n", ret);
+    if(!faulted_opcode) {
+        nk_vc_printf("RETURNED---- Hi order (edx): 0x%08x Lo order (eax): 0x%08x\n", hi, lo);
+        nk_vc_printf("RETURNED---- MSR Register value: 0x%llx\n", ret);
+        nk_vc_printf("IMPORTANT--- MSR address 0x%08x\n", location); 
+    }
+#ifdef DEBUG
+    nk_vc_printf("INFO---- Faulted value %d\n", faulted_opcode); 
+    nk_vc_printf("INFO---- Hi order (edx): 0x%08x Lo order (eax): 0x%08x\n", hi, lo);
+    nk_vc_printf("INFO---- MSR Register value: 0x%llx\n", ret);
+    nk_vc_printf("STATUS--- MSR address 0x%08x\n", location); 
+    nk_vc_printf("SKIP-----------------------------------\n\n");  
+#endif
+
+    faulted_opcode = 0; //reset fault 
 }
 
 static int
@@ -44,6 +68,10 @@ handle_test_msr(char * buf, void * priv) {
     //Should fault, tries to read msr from 0x02 which doesn't exist 
     location = 0x03; 
     read_msr_at(location); 
+
+    //Test run 1, address stalled the processor
+    location = 0x83e;
+    read_msr_at(location);
 
     return 0;
 }
@@ -89,3 +117,19 @@ static struct shell_cmd_impl msr_test_impl = {
     .handler  = handle_test_msr,
 };
 nk_register_shell_cmd(msr_test_impl);
+
+static struct shell_cmd_impl msr_scan_impl = {
+    .cmd      = "scanmsr",
+    .help_str = "scanmsr",
+    .handler  = handle_scan_msr,
+};
+nk_register_shell_cmd(msr_scan_impl);
+
+
+/*
+    Lets the exception handler tell us we faulted 
+*/
+void 
+invalid_msr() {
+    faulted_opcode = 1; 
+}
