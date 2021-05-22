@@ -2,6 +2,9 @@
 #define RESERVED 1<<20
 //#define DEBUG 1
 
+//provides status updates every [x] instructions
+#define STATUS 65536
+
 //Scans the MSR at the location and prints out the returned values along, or if faulted it prints fault when DEBUG is on
 void read_msr_at(uint32_t location);
 

@@ -1,4 +1,6 @@
-STATUS: Confirmed that nautilus hangs upon MSR address 0x83e
+STATUS: Confirmed that nautilus hangs upon MSR address 0x83e, Suspecting that this is because we don't print when we fault so maybe it is still running just not finding the any MSRs
+
+
 
 root-shell> testmsr
 RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0xfee00d00

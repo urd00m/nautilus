@@ -10,13 +10,14 @@
 	Opcode branch functions to play with CPUID and MSR
 */
 int faulted_opcode;
-
+uint32_t msr_found;
 /*
     Scans all 4 billion possible MSRs and prints out valid MSRs to the screen for IO redirection to file
 */
 static int
 handle_scan_msr(char * buf, void * priv) {
     uint32_t location;
+    msr_found = 0;
     for(location = 0; location < 0xffffffff; location++) { //scanning the 4 billion possible MSRs, our general protection fault catcher will print it to the screen, where we redirect it to a file 
         read_msr_at(location); 
     }
@@ -41,13 +42,20 @@ read_msr_at(uint32_t location) {
         nk_vc_printf("RETURNED---- Hi order (edx): 0x%08x Lo order (eax): 0x%08x\n", hi, lo);
         nk_vc_printf("RETURNED---- MSR Register value: 0x%llx\n", ret);
         nk_vc_printf("IMPORTANT--- MSR address 0x%08x\n", location); 
+        msr_found = msr_found+1;
     }
 #ifdef DEBUG
     nk_vc_printf("INFO---- Faulted value %d\n", faulted_opcode); 
     nk_vc_printf("INFO---- Hi order (edx): 0x%08x Lo order (eax): 0x%08x\n", hi, lo);
     nk_vc_printf("INFO---- MSR Register value: 0x%llx\n", ret);
-    nk_vc_printf("STATUS--- MSR address 0x%08x\n", location); 
+    nk_vc_printf("STATUS---- MSR address 0x%08x\n", location); 
     nk_vc_printf("SKIP-----------------------------------\n\n");  
+#endif
+
+#ifdef STATUS
+    if(faulted_opcode == 0 || location%STATUS == 0) { //provides updates every STATUS instructions or upon a new MSR
+         nk_vc_printf("STATUS---- Current Address 0x%08x      MSRs found: %d\n", location, msr_found);
+    }
 #endif
 
     faulted_opcode = 0; //reset fault 
