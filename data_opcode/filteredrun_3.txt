@@ -1,0 +1,1130 @@
+Total MSRs found = 224
+
+------------------------------------------------------------
+
+IMPORTANT--- MSR address 0x00000000
+IMPORTANT--- MSR address 0x00000001
+IMPORTANT--- MSR address 0x00000010
+IMPORTANT--- MSR address 0x00000011
+IMPORTANT--- MSR address 0x00000012
+IMPORTANT--- MSR address 0x00000017
+IMPORTANT--- MSR address 0x0000001b
+IMPORTANT--- MSR address 0x0000002a
+IMPORTANT--- MSR address 0x0000002c
+IMPORTANT--- MSR address 0x0000003a
+IMPORTANT--- MSR address 0x0000003b
+IMPORTANT--- MSR address 0x0000008b
+IMPORTANT--- MSR address 0x000000c1
+IMPORTANT--- MSR address 0x000000c2
+IMPORTANT--- MSR address 0x000000cd
+IMPORTANT--- MSR address 0x000000ce
+IMPORTANT--- MSR address 0x000000fe
+IMPORTANT--- MSR address 0x0000011e
+IMPORTANT--- MSR address 0x00000140
+IMPORTANT--- MSR address 0x00000174
+IMPORTANT--- MSR address 0x00000175
+IMPORTANT--- MSR address 0x00000176
+IMPORTANT--- MSR address 0x00000179
+IMPORTANT--- MSR address 0x0000017a
+IMPORTANT--- MSR address 0x0000017b
+IMPORTANT--- MSR address 0x00000186
+IMPORTANT--- MSR address 0x00000187
+IMPORTANT--- MSR address 0x00000198
+IMPORTANT--- MSR address 0x00000199
+IMPORTANT--- MSR address 0x000001a0
+IMPORTANT--- MSR address 0x000001d9
+IMPORTANT--- MSR address 0x000001db
+IMPORTANT--- MSR address 0x000001dc
+IMPORTANT--- MSR address 0x000001dd
+IMPORTANT--- MSR address 0x000001de
+IMPORTANT--- MSR address 0x00000200
+IMPORTANT--- MSR address 0x00000201
+IMPORTANT--- MSR address 0x00000202
+IMPORTANT--- MSR address 0x00000203
+IMPORTANT--- MSR address 0x00000204
+IMPORTANT--- MSR address 0x00000205
+IMPORTANT--- MSR address 0x00000206
+IMPORTANT--- MSR address 0x00000207
+IMPORTANT--- MSR address 0x00000208
+IMPORTANT--- MSR address 0x00000209
+IMPORTANT--- MSR address 0x0000020a
+IMPORTANT--- MSR address 0x0000020b
+IMPORTANT--- MSR address 0x0000020c
+IMPORTANT--- MSR address 0x0000020d
+IMPORTANT--- MSR address 0x0000020e
+IMPORTANT--- MSR address 0x0000020f
+IMPORTANT--- MSR address 0x00000250
+IMPORTANT--- MSR address 0x00000258
+IMPORTANT--- MSR address 0x00000259
+IMPORTANT--- MSR address 0x00000268
+IMPORTANT--- MSR address 0x00000269
+IMPORTANT--- MSR address 0x0000026a
+IMPORTANT--- MSR address 0x0000026b
+IMPORTANT--- MSR address 0x0000026c
+IMPORTANT--- MSR address 0x0000026d
+IMPORTANT--- MSR address 0x0000026e
+IMPORTANT--- MSR address 0x0000026f
+IMPORTANT--- MSR address 0x00000277
+IMPORTANT--- MSR address 0x000002ff
+IMPORTANT--- MSR address 0x00000400
+IMPORTANT--- MSR address 0x00000401
+IMPORTANT--- MSR address 0x00000402
+IMPORTANT--- MSR address 0x00000403
+IMPORTANT--- MSR address 0x00000404
+IMPORTANT--- MSR address 0x00000405
+IMPORTANT--- MSR address 0x00000406
+IMPORTANT--- MSR address 0x00000407
+IMPORTANT--- MSR address 0x00000408
+IMPORTANT--- MSR address 0x00000409
+IMPORTANT--- MSR address 0x0000040a
+IMPORTANT--- MSR address 0x0000040b
+IMPORTANT--- MSR address 0x0000040c
+IMPORTANT--- MSR address 0x0000040d
+IMPORTANT--- MSR address 0x0000040e
+IMPORTANT--- MSR address 0x0000040f
+IMPORTANT--- MSR address 0x00000410
+IMPORTANT--- MSR address 0x00000411
+IMPORTANT--- MSR address 0x00000412
+IMPORTANT--- MSR address 0x00000413
+IMPORTANT--- MSR address 0x00000414
+IMPORTANT--- MSR address 0x00000415
+IMPORTANT--- MSR address 0x00000416
+IMPORTANT--- MSR address 0x00000417
+IMPORTANT--- MSR address 0x00000418
+IMPORTANT--- MSR address 0x00000419
+IMPORTANT--- MSR address 0x0000041a
+IMPORTANT--- MSR address 0x0000041b
+IMPORTANT--- MSR address 0x0000041c
+IMPORTANT--- MSR address 0x0000041d
+IMPORTANT--- MSR address 0x0000041e
+IMPORTANT--- MSR address 0x0000041f
+IMPORTANT--- MSR address 0x00000420
+IMPORTANT--- MSR address 0x00000421
+IMPORTANT--- MSR address 0x00000422
+IMPORTANT--- MSR address 0x00000423
+IMPORTANT--- MSR address 0x00000424
+IMPORTANT--- MSR address 0x00000425
+IMPORTANT--- MSR address 0x00000426
+IMPORTANT--- MSR address 0x00000427
+IMPORTANT--- MSR address 0x00000480
+IMPORTANT--- MSR address 0x00000481
+IMPORTANT--- MSR address 0x00000482
+IMPORTANT--- MSR address 0x00000483
+IMPORTANT--- MSR address 0x00000484
+IMPORTANT--- MSR address 0x00000485
+IMPORTANT--- MSR address 0x00000486
+IMPORTANT--- MSR address 0x00000487
+IMPORTANT--- MSR address 0x00000488
+IMPORTANT--- MSR address 0x00000489
+IMPORTANT--- MSR address 0x0000048a
+IMPORTANT--- MSR address 0x0000048b
+IMPORTANT--- MSR address 0x0000048c
+IMPORTANT--- MSR address 0x0000048d
+IMPORTANT--- MSR address 0x0000048e
+IMPORTANT--- MSR address 0x0000048f
+IMPORTANT--- MSR address 0x00000490
+IMPORTANT--- MSR address 0x00000491
+IMPORTANT--- MSR address 0x000006e0
+IMPORTANT--- MSR address 0x00000802
+IMPORTANT--- MSR address 0x00000803
+IMPORTANT--- MSR address 0x00000808
+IMPORTANT--- MSR address 0x00000809
+IMPORTANT--- MSR address 0x0000080a
+IMPORTANT--- MSR address 0x0000080d
+IMPORTANT--- MSR address 0x0000080f
+IMPORTANT--- MSR address 0x00000810
+IMPORTANT--- MSR address 0x00000811
+IMPORTANT--- MSR address 0x00000812
+IMPORTANT--- MSR address 0x00000813
+IMPORTANT--- MSR address 0x00000814
+IMPORTANT--- MSR address 0x00000815
+IMPORTANT--- MSR address 0x00000816
+IMPORTANT--- MSR address 0x00000817
+IMPORTANT--- MSR address 0x00000818
+IMPORTANT--- MSR address 0x00000819
+IMPORTANT--- MSR address 0x0000081a
+IMPORTANT--- MSR address 0x0000081b
+IMPORTANT--- MSR address 0x0000081c
+IMPORTANT--- MSR address 0x0000081d
+IMPORTANT--- MSR address 0x0000081e
+IMPORTANT--- MSR address 0x0000081f
+IMPORTANT--- MSR address 0x00000820
+IMPORTANT--- MSR address 0x00000821
+IMPORTANT--- MSR address 0x00000822
+IMPORTANT--- MSR address 0x00000823
+IMPORTANT--- MSR address 0x00000824
+IMPORTANT--- MSR address 0x00000825
+IMPORTANT--- MSR address 0x00000826
+IMPORTANT--- MSR address 0x00000827
+IMPORTANT--- MSR address 0x00000828
+IMPORTANT--- MSR address 0x00000830
+IMPORTANT--- MSR address 0x00000832
+IMPORTANT--- MSR address 0x00000833
+IMPORTANT--- MSR address 0x00000834
+IMPORTANT--- MSR address 0x00000835
+IMPORTANT--- MSR address 0x00000836
+IMPORTANT--- MSR address 0x00000837
+IMPORTANT--- MSR address 0x00000838
+IMPORTANT--- MSR address 0x00000839
+IMPORTANT--- MSR address 0x0000083e
+IMPORTANT--- MSR address 0x40000000
+IMPORTANT--- MSR address 0x40000001
+IMPORTANT--- MSR address 0x40000002
+IMPORTANT--- MSR address 0x40000003
+IMPORTANT--- MSR address 0x40000010
+IMPORTANT--- MSR address 0x40000020
+IMPORTANT--- MSR address 0x40000021
+IMPORTANT--- MSR address 0x40000022
+IMPORTANT--- MSR address 0x40000023
+IMPORTANT--- MSR address 0x40000071
+IMPORTANT--- MSR address 0x40000072
+IMPORTANT--- MSR address 0x40000073
+IMPORTANT--- MSR address 0x400000b0
+IMPORTANT--- MSR address 0x400000b1
+IMPORTANT--- MSR address 0x400000b2
+IMPORTANT--- MSR address 0x400000b3
+IMPORTANT--- MSR address 0x400000b4
+IMPORTANT--- MSR address 0x400000b5
+IMPORTANT--- MSR address 0x400000b6
+IMPORTANT--- MSR address 0x400000b7
+IMPORTANT--- MSR address 0x40000100
+IMPORTANT--- MSR address 0x40000101
+IMPORTANT--- MSR address 0x40000102
+IMPORTANT--- MSR address 0x40000103
+IMPORTANT--- MSR address 0x40000104
+IMPORTANT--- MSR address 0x40000105
+IMPORTANT--- MSR address 0x4b564d00
+IMPORTANT--- MSR address 0x4b564d01
+IMPORTANT--- MSR address 0x4b564d02
+IMPORTANT--- MSR address 0x4b564d03
+IMPORTANT--- MSR address 0x4b564d04
+IMPORTANT--- MSR address 0xc0000080
+IMPORTANT--- MSR address 0xc0000081
+IMPORTANT--- MSR address 0xc0000082
+IMPORTANT--- MSR address 0xc0000083
+IMPORTANT--- MSR address 0xc0000084
+IMPORTANT--- MSR address 0xc0000100
+IMPORTANT--- MSR address 0xc0000101
+IMPORTANT--- MSR address 0xc0000102
+IMPORTANT--- MSR address 0xc0010000
+IMPORTANT--- MSR address 0xc0010001
+IMPORTANT--- MSR address 0xc0010002
+IMPORTANT--- MSR address 0xc0010003
+IMPORTANT--- MSR address 0xc0010004
+IMPORTANT--- MSR address 0xc0010005
+IMPORTANT--- MSR address 0xc0010006
+IMPORTANT--- MSR address 0xc0010007
+IMPORTANT--- MSR address 0xc0010010
+IMPORTANT--- MSR address 0xc0010015
+IMPORTANT--- MSR address 0xc001001b
+IMPORTANT--- MSR address 0xc001001f
+IMPORTANT--- MSR address 0xc0010055
+IMPORTANT--- MSR address 0xc0010058
+IMPORTANT--- MSR address 0xc0010112
+IMPORTANT--- MSR address 0xc0010113
+IMPORTANT--- MSR address 0xc0010117
+IMPORTANT--- MSR address 0xc0011022
+IMPORTANT--- MSR address 0xc001102a
+IMPORTANT--- MSR address 0xc001102c
+
+------------------------------------------------------------
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000000
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000001
+
+RETURNED---- Hi order (edx): 0x00000005 Lo order (eax): 0x8940d2b3
+RETURNED---- MSR Register value: 0x58940d2b3
+IMPORTANT--- MSR address 0x00000010
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000011
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000012
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000017
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0xfee00d00
+RETURNED---- MSR Register value: 0xfee00d00
+IMPORTANT--- MSR address 0x0000001b
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000002a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x01000000
+RETURNED---- MSR Register value: 0x1000000
+IMPORTANT--- MSR address 0x0000002c
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000003a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000003b
+
+RETURNED---- Hi order (edx): 0x00000001 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x100000000
+IMPORTANT--- MSR address 0x0000008b
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000000c1
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000000c2
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000003
+RETURNED---- MSR Register value: 0x3
+IMPORTANT--- MSR address 0x000000cd
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x80000000
+RETURNED---- MSR Register value: 0x80000000
+IMPORTANT--- MSR address 0x000000ce
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000508
+RETURNED---- MSR Register value: 0x508
+IMPORTANT--- MSR address 0x000000fe
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0xbe702111
+RETURNED---- MSR Register value: 0xbe702111
+IMPORTANT--- MSR address 0x0000011e
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000140
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000174
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000175
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000176
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x0100010a
+RETURNED---- MSR Register value: 0x100010a
+IMPORTANT--- MSR address 0x00000179
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000017a
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x0000017b
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000186
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000187
+
+RETURNED---- Hi order (edx): 0x00000400 Lo order (eax): 0x000003e8
+RETURNED---- MSR Register value: 0x400000003e8
+IMPORTANT--- MSR address 0x00000198
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000199
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000001
+RETURNED---- MSR Register value: 0x1
+IMPORTANT--- MSR address 0x000001a0
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000001d9
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000001db
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000001dc
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000001dd
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000001de
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x80000000
+RETURNED---- MSR Register value: 0x80000000
+IMPORTANT--- MSR address 0x00000200
+
+RETURNED---- Hi order (edx): 0x000000ff Lo order (eax): 0x80000800
+RETURNED---- MSR Register value: 0xff80000800
+IMPORTANT--- MSR address 0x00000201
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000202
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000203
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000204
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000205
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000206
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000207
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000208
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000209
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000020a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000020b
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000020c
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000020d
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000020e
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000020f
+
+RETURNED---- Hi order (edx): 0x06060606 Lo order (eax): 0x06060606
+RETURNED---- MSR Register value: 0x606060606060606
+IMPORTANT--- MSR address 0x00000250
+
+RETURNED---- Hi order (edx): 0x06060606 Lo order (eax): 0x06060606
+RETURNED---- MSR Register value: 0x606060606060606
+IMPORTANT--- MSR address 0x00000258
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000259
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x00000268
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x00000269
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x0000026a
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x0000026b
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x0000026c
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x0000026d
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x0000026e
+
+RETURNED---- Hi order (edx): 0x05050505 Lo order (eax): 0x05050505
+RETURNED---- MSR Register value: 0x505050505050505
+IMPORTANT--- MSR address 0x0000026f
+
+RETURNED---- Hi order (edx): 0x00070406 Lo order (eax): 0x00070406
+RETURNED---- MSR Register value: 0x7040600070406
+IMPORTANT--- MSR address 0x00000277
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000c06
+RETURNED---- MSR Register value: 0xc06
+IMPORTANT--- MSR address 0x000002ff
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000400
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000401
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000402
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000403
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000404
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000405
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000406
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000407
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000408
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000409
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000040a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000040b
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x0000040c
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000040d
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000040e
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000040f
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000410
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000411
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000412
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000413
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000414
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000415
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000416
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000417
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000418
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000419
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000041a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000041b
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x0000041c
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000041d
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000041e
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000041f
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000420
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000421
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000422
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000423
+
+RETURNED---- Hi order (edx): 0xffffffff Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffffffffffff
+IMPORTANT--- MSR address 0x00000424
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000425
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000426
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000427
+
+RETURNED---- Hi order (edx): 0x00d81000 Lo order (eax): 0x11e57ed0
+RETURNED---- MSR Register value: 0xd8100011e57ed0
+IMPORTANT--- MSR address 0x00000480
+
+RETURNED---- Hi order (edx): 0x0000007f Lo order (eax): 0x00000016
+RETURNED---- MSR Register value: 0x7f00000016
+IMPORTANT--- MSR address 0x00000481
+
+RETURNED---- Hi order (edx): 0xfff9fffe Lo order (eax): 0x0401e172
+RETURNED---- MSR Register value: 0xfff9fffe0401e172
+IMPORTANT--- MSR address 0x00000482
+
+RETURNED---- Hi order (edx): 0x007fefff Lo order (eax): 0x00036dff
+RETURNED---- MSR Register value: 0x7fefff00036dff
+IMPORTANT--- MSR address 0x00000483
+
+RETURNED---- Hi order (edx): 0x0000d3ff Lo order (eax): 0x000011ff
+RETURNED---- MSR Register value: 0xd3ff000011ff
+IMPORTANT--- MSR address 0x00000484
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000065
+RETURNED---- MSR Register value: 0x65
+IMPORTANT--- MSR address 0x00000485
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x80000021
+RETURNED---- MSR Register value: 0x80000021
+IMPORTANT--- MSR address 0x00000486
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0xffffffff
+RETURNED---- MSR Register value: 0xffffffff
+IMPORTANT--- MSR address 0x00000487
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00002000
+RETURNED---- MSR Register value: 0x2000
+IMPORTANT--- MSR address 0x00000488
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000027fc
+RETURNED---- MSR Register value: 0x27fc
+IMPORTANT--- MSR address 0x00000489
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x0000002e
+RETURNED---- MSR Register value: 0x2e
+IMPORTANT--- MSR address 0x0000048a
+
+RETURNED---- Hi order (edx): 0x000000f7 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0xf700000000
+IMPORTANT--- MSR address 0x0000048b
+
+RETURNED---- Hi order (edx): 0x00000f01 Lo order (eax): 0x06134041
+RETURNED---- MSR Register value: 0xf0106134041
+IMPORTANT--- MSR address 0x0000048c
+
+RETURNED---- Hi order (edx): 0x0000007f Lo order (eax): 0x00000016
+RETURNED---- MSR Register value: 0x7f00000016
+IMPORTANT--- MSR address 0x0000048d
+
+RETURNED---- Hi order (edx): 0xfff9fffe Lo order (eax): 0x04006172
+RETURNED---- MSR Register value: 0xfff9fffe04006172
+IMPORTANT--- MSR address 0x0000048e
+
+RETURNED---- Hi order (edx): 0x007fefff Lo order (eax): 0x00036dfb
+RETURNED---- MSR Register value: 0x7fefff00036dfb
+IMPORTANT--- MSR address 0x0000048f
+
+RETURNED---- Hi order (edx): 0x0000d3ff Lo order (eax): 0x000011fb
+RETURNED---- MSR Register value: 0xd3ff000011fb
+IMPORTANT--- MSR address 0x00000490
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000491
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x000006e0
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000802
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00050014
+RETURNED---- MSR Register value: 0x50014
+IMPORTANT--- MSR address 0x00000803
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000808
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000809
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000080a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000001
+RETURNED---- MSR Register value: 0x1
+IMPORTANT--- MSR address 0x0000080d
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000001ff
+RETURNED---- MSR Register value: 0x1ff
+IMPORTANT--- MSR address 0x0000080f
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000810
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000811
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000812
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000813
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000814
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000815
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000816
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000817
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000818
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000819
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000081a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000081b
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000081c
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000081d
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000081e
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x0000081f
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000820
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000821
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000822
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000823
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000824
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000825
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000826
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000827
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x00000828
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000c4610
+RETURNED---- MSR Register value: 0xc4610
+IMPORTANT--- MSR address 0x00000830
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000000f0
+RETURNED---- MSR Register value: 0xf0
+IMPORTANT--- MSR address 0x00000832
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000100f2
+RETURNED---- MSR Register value: 0x100f2
+IMPORTANT--- MSR address 0x00000833
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000100f3
+RETURNED---- MSR Register value: 0x100f3
+IMPORTANT--- MSR address 0x00000834
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00010700
+RETURNED---- MSR Register value: 0x10700
+IMPORTANT--- MSR address 0x00000835
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000400
+RETURNED---- MSR Register value: 0x400
+IMPORTANT--- MSR address 0x00000836
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000000f1
+RETURNED---- MSR Register value: 0xf1
+IMPORTANT--- MSR address 0x00000837
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x005f8e7f
+RETURNED---- MSR Register value: 0x5f8e7f
+IMPORTANT--- MSR address 0x00000838
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x0003df51
+RETURNED---- MSR Register value: 0x3df51
+IMPORTANT--- MSR address 0x00000839
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000003
+RETURNED---- MSR Register value: 0x3
+IMPORTANT--- MSR address 0x0000083e
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000000
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000001
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000002
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000003
+
+RETURNED---- Hi order (edx): 0x00000008 Lo order (eax): 0xb462d5a8
+RETURNED---- MSR Register value: 0x8b462d5a8
+IMPORTANT--- MSR address 0x40000010
+
+RETURNED---- Hi order (edx): 0x00000008 Lo order (eax): 0xcb862a81
+RETURNED---- MSR Register value: 0x8cb862a81
+IMPORTANT--- MSR address 0x40000020
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000021
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x5341df90
+RETURNED---- MSR Register value: 0x5341df90
+IMPORTANT--- MSR address 0x40000022
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x3b9aca00
+RETURNED---- MSR Register value: 0x3b9aca00
+IMPORTANT--- MSR address 0x40000023
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x000c4610
+RETURNED---- MSR Register value: 0xc4610
+IMPORTANT--- MSR address 0x40000071
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000072
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000073
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b0
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b1
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b2
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b3
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b4
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b5
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b6
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x400000b7
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000100
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000101
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000102
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000103
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x40000104
+
+RETURNED---- Hi order (edx): 0x80000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x8000000000000000
+IMPORTANT--- MSR address 0x40000105
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x4b564d00
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x4b564d01
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x4b564d02
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x4b564d03
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0x4b564d04
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000500
+RETURNED---- MSR Register value: 0x500
+IMPORTANT--- MSR address 0xc0000080
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0000081
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0000082
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0000083
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0000084
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0000100
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00802000
+RETURNED---- MSR Register value: 0x802000
+IMPORTANT--- MSR address 0xc0000101
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0000102
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010000
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010001
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010002
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010003
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010004
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010005
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010006
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010007
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010010
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010015
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x20000000
+RETURNED---- MSR Register value: 0x20000000
+IMPORTANT--- MSR address 0xc001001b
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc001001f
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010055
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010058
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010112
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010113
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0010117
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc0011022
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc001102a
+
+RETURNED---- Hi order (edx): 0x00000000 Lo order (eax): 0x00000000
+RETURNED---- MSR Register value: 0x0
+IMPORTANT--- MSR address 0xc001102c
+
+
+------------------------------------------------------------
+
