@@ -4,40 +4,40 @@ Intesting MSRs after manual check: 31
 
 High Intestest MSRs: (Total: 11) 
 These MSRs seemed to be in the architectural MSR range, but they aren't in fact they don't exist according to Intel's documentation 
-0x40000100 
-0x40000101
-0x40000102
-0x40000103
-0x40000104
-0x40000105 
-0x4B564D00 
-0x4B564D01
-0x4B564D02
-0x4B564D03
-0x4B564D04 
+0x40000100 (KVM MSR)
+0x40000101 (KVM MSR)
+0x40000102 (KVM MSR)
+0x40000103 (KVM MSR) 
+0x40000104 (KVM MSR)
+0x40000105 (Guest crash capabilities - related to hypervisor) *
+0x4B564D00 (Custom KVM MSRs)
+0x4B564D01 (Custom KVM MSRs)
+0x4B564D02 (Custom KVM MSRs)
+0x4B564D03 (Custom KVM MSRs)
+0x4B564D04 (Custom KVM MSRs)
 
 Medium Interest MSRs: (Total: 20) 
 These aren't listed anywhere on Intel's MSR documentation, though it almost appears that they were, however, they arne't high interest since they might be in AMDs doucumentation
-0xC0010000
-0xC0010001
-0xC0010002
-0xC0010003
-0xC0010004
-0xC0010005
-0xC0010006
-0xC0010007
-0xC0010010
-0xC0010015
-0xC001001B
-0xC001001F
-0xC0010055
-0xC0010058
-0xC0010112
-0xC0010113
-0xC0010117
-0xC0011022
-0xC001102A
-0xC001102C
+0xC0010000 (AMD MSR that exist in Intel 64 bit processors - fs base) 
+0xC0010001 (AMD MSR - gs base) 
+0xC0010002 (AMD MSR - kgs base) 
+0xC0010003 (AMD MSR however, it shouldn't exist in Intel processors - evtsel3) *
+0xC0010004 (AMD MSR however, it shouldn't exist in Intel processors - ctr0) *
+0xC0010005 (AMD MSR however, it shouldn't exist in Intel processors - ctr1) *
+0xC0010006 (AMD MSR however, it shouldn't exist in Intel processors - ctr2) *
+0xC0010007 (AMD MSR however, it shouldn't exist in Intel processors - ctr3) *
+0xC0010010 (AMD MSR however, it shouldn't exist in Intel processors - ctr6) *
+0xC0010015 (AMD MSR however, it shouldn't exist in Intel processors - ctr11) *
+0xC001001B (K7 MSR - MSR_K7_CLK_CTL) *
+0xC001001F (AMD MSR - MSR_AMD64_NB_CFG) *
+0xC0010055 (K8 MSR - MSR_K8_INT_PENDING_MSG) * 
+0xC0010058 (Fam 10h MSR - MSR_FAM10H_MMIO_CONF_BASE) *
+0xC0010112 (K8 MSR - MSR_K8_TSEG_ADDR) *
+0xC0010113 (SMM MSR - SMM_MASK_MSR) ********
+0xC0010117 (AMD MSR - MSR_VM_HSAVE_PA) 
+0xC0011022 (AMD MSR - MSR_AMD64_DC_CFG) 
+0xC001102A (AMD MSR - MSR_AMD64_BU_CFG2) 
+0xC001102C (Fam 15h MSR - MSR_F15H_EX_CFG) 
 
 Actually are documented (low-interest): (Total: 55)  
 Everything without a star next to it 

@@ -26,7 +26,7 @@ handle_scan_msr(char * buf, void * priv) {
 
 
 /*
-    Test function for MSR 
+    Read function for MSR 
 */
 void
 read_msr_at(uint32_t location) {
@@ -80,6 +80,27 @@ handle_test_msr(char * buf, void * priv) {
     //Test run 1, address stalled the processor
     location = 0x83e;
     read_msr_at(location);
+
+
+    //begin testing write msr 
+    nk_vc_printf("\nTesting write MSR\n\n");
+
+    //testing the guest crash msr
+    struct msr_guest_crash data; 
+    location = MSR_GUEST_CRASH;
+    data.b0 = 1;
+    read_msr_at(location);  //confirm 
+    msr_write(location, data.val);
+    read_msr_at(location); //confirm 
+    nk_vc_printf("Tested location 0x%08x with value 0x%016llx\n\n", location, data.val); 
+
+    //testing the msr 0 
+    location = 0x00000010; 
+    data.val = 0xffffffff; 
+    read_msr_at(location); 
+    msr_write(location, data.val); //TODO: switch to a correct struct
+    read_msr_at(location); 
+    nk_vc_printf("Tested location 0x%08x with value 0x%016llx\n", location, data.val); 
 
     return 0;
 }
